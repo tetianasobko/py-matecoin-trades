@@ -5,7 +5,7 @@ from decimal import Decimal
 def calculate_profit(trades_file_name: str) -> None:
     with (
         open(trades_file_name, "r") as trades_file,
-        open("../profit.json", "w") as profit_file
+        open("profit.json", "w") as profit_file
     ):
         trades = json.load(trades_file)
 
